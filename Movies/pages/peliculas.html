@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="">
+        <div class="flex items-center justify-center bg-zinc-800">
+            <img class="  w-5/6 object-cover object-[0_70%] h-[700px] m-3" src="../assets/images/movie-background-collage_23-2149876005.jpg" alt="Banner">
+        </div>
+        
+    </header>
+
+    <div class="sticky xl:fixed text-zinc-50 top-0 w-full bg-violet-800 flex items-center justify-between flex-wrap px-5 ">
+        <img class="w-20 h-20 object-cover" src="../assets/images/Moviestack_isotipo.png" alt="Logo">
+        <h2 class="text-center lg:top-0 font-semibold lg:text-3xl">Moviestack</h2>
+        <nav class="grow p-2 z-10 flex justify-end gap-5 lg:order-3 lg:grow-0">
+            <a class="hover:bg-white hover:text-black border rounded p-2 text-lg font-semibold" href="../index.html">Home</a>
+            <a class="bg-white text-black border rounded p-2 text-lg font-semibold" href="#">Movies</a>
+            <a class="hover:bg-white hover:text-black hover:bg-blue-500 border rounded p-2 text-lg font-semibold" href="#">Favs</a>
+        </nav>
+      
+    </div>
+
+
+     <main class="bg-zinc-800 ">
+        <div>
+            <section>
+                <article class="bg-violet-300">
+                    <h1 class="text-3xl text-center font-bold text-violet-800">Movies</h1>
+                </article>
+                
+            </section>
+            
+            <search class="flex flex-wrap gap-5 justify-center m-3">
+                <div class="w-3/4 flex justify-center relative">
+                    <input id="Busqueda" class="w-full h-9 rounded text-black ps-2" placeholder="Ej: Sound of Freedom" type="text">
+                </div>
+                
+                <div class="flex flex-wrap gap-5 justify-center">
+                    <select class="text-black" name="generos" id="Selector">
+                        
+
+                    </select>
+                </div>
+            </search>
+    
+            <div>
+                <main id="main" class="grow p-7 flex flex-wrap gap-10 justify-center">
+
+                </main>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <script src="../assets/scripts/dataPeliculas.js"></script>
+    <script src="../assets/scripts/cartelera.js"></script>
+
+</body>
+</html>
